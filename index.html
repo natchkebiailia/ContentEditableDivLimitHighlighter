@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<title>ContentEditable Div Character Limit Highlighter</title>
+		<meta charset="utf-8">
+		<script src="ContentEditableDivLimitHighlighter.js" type="text/javascript"></script>
+	</head>
+<body>
+
+	<div id="myDiv1"  contenteditable=true >this is a contenteditable div1</div>
+	<div id="myDiv2"  contenteditable=true >this is a contenteditable div2</div>
+	<div id="myDiv3"  contenteditable=true >this is a contenteditable div3</div>
+	
+	<script>
+		ContentEditableDivCharLimitHighlighter(document.getElementById("myDiv1"),30);
+		ContentEditableDivCharLimitHighlighter(document.getElementById("myDiv2"),40,"purple");
+		ContentEditableDivCharLimitHighlighter(document.getElementById("myDiv3"),50,"red");
+	</script>
+</body>
+</html>
